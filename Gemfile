@@ -5,6 +5,7 @@ gem 'rails', '3.2.0'
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 2.8.0'
+  gem "shoulda-matchers", "~> 1.0.0"
 end
 
 
