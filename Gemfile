@@ -1,11 +1,13 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
+gem "haml", "~> 3.1.4"
 
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 2.8.0'
   gem "shoulda-matchers", "~> 1.0.0"
+  gem "capybara", "~> 1.1.2"
 end
 
 
@@ -21,4 +23,4 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-# gem 'jquery-rails'
+gem 'jquery-rails'
