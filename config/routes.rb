@@ -1,5 +1,5 @@
 Theoverheards::Application.routes.draw do
-  resources :quotes, :only => [:index]
+  resources :quotes, :only => [:index, :new, :create]
   root :to => "quotes#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.

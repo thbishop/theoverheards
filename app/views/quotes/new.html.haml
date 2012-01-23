@@ -1,0 +1,11 @@
+= form_for @quote do |f|
+  - if @quote.errors.any?
+    %ul
+      - @quote.errors.full_messages.each do |message|
+        %li
+          = message
+
+  = f.label :content, 'Quote'
+  %br
+  = f.text_area :content
+  = f.submit 'Add'
