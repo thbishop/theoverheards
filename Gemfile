@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.0'
 gem "haml", "~> 3.1.4"
+gem "pg"
 
 group :development, :test do
   gem 'sqlite3'
