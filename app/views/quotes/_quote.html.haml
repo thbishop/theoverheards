@@ -1,3 +1,5 @@
-.quote
-  = quote.content
-  %hr
+.row
+  %div{:id => "quote_#{quote.id}", :class => ['quote', 'span10']}
+    = quote.content
+    .quote_meta
+      = quote.created_at

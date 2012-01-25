@@ -1,0 +1,17 @@
+.quote {
+  background: #fff;
+  padding: 10px;
+  border: solid 1px #ccc;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.add_quote {
+  float: right;
+  text-align: right;
+}
+
+.quote_meta {
+  color: #aaa;
+  font-size: 10px;
+}
