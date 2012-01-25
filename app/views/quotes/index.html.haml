@@ -1,3 +1,6 @@
+.row
+  %div{:class => ['add_quote', 'span2', 'offset8']}
+    = link_to 'Add a new one', new_quote_path
 - @quotes.each do |quote|
   = render :partial => "quote", :object => quote
   %br

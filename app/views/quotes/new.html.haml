@@ -1,11 +1,20 @@
-= form_for @quote do |f|
-  - if @quote.errors.any?
-    %ul
-      - @quote.errors.full_messages.each do |message|
-        %li
-          = message
-
-  = f.label :content, 'Quote'
-  %br
-  = f.text_area :content
-  = f.submit 'Add'
+%div{:class => ['quote_form', 'span10']}
+  = form_for @quote, :html => { :class => 'form-stacked' } do |f|
+    - if @quote.errors.any?
+      %div{:class => ['alert-message', 'block-message', 'error']}
+        %p
+          Whoops, that won't work.  Probably because:
+        %br
+        %ul
+          - @quote.errors.full_messages.each do |message|
+            %li
+              = message
+        %br
+        %p
+          Try to change it and try again
+    %fieldset
+      %legend Quote:
+      %div{:class => 'clearfix'}
+        %div{:class => ['input', 'xlarge']}
+          = f.text_area :content, :rows => 10, :class => 'xxlarge'
+      = f.submit 'Add', :class => 'btn large'
